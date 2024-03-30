@@ -25,4 +25,5 @@ function generateArray(start, end) {
 // Example usage with prompt
 const start = parseInt(prompt("Enter the starting number:"));
 const end = parseInt(prompt("Enter the ending number:"));
-console.log(generateArray(start, end));
+const generateArrayrray = (generateArray(start, end));
+alert(`Generated array: ${generateArrayrray.join(', ')}`);

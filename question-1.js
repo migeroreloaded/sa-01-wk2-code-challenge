@@ -12,4 +12,5 @@ function swapCase(inputString) {
 
 // Example usage with prompt
 const inputString = prompt("Enter a string:");
-console.log(swapCase(inputString));
+const swapedCase = (swapCase(inputString));
+alert(`The Swaped case string is: ${swapedCase}`);

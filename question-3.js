@@ -21,4 +21,5 @@ function getPrimeNumbers(array) {
 
 // Example usage with prompt
 const inputArray = prompt("Enter numbers separated by commas: e.g. 1,2,3,4,5,6,7...").split(',').map(Number);
-console.log(getPrimeNumbers(inputArray));
+const primes = getPrimeNumbers(inputArray);
+alert("Prime numbers in the input array are: " + primes.join(', '));
