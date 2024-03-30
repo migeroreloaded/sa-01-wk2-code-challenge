@@ -10,5 +10,6 @@ function swapCase(inputString) {
     }).join(''); // Join the array of characters back into a string
 }
 
-// Example usage
-console.log(swapCase('The Quick Brown Fox'));
+// Example usage with prompt
+const inputString = prompt("Enter a string:");
+console.log(swapCase(inputString));

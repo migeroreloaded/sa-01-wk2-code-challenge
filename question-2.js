@@ -22,6 +22,7 @@ function generateArray(start, end) {
     return array;
 }
 
-// Example usage
-console.log(generateArray(4, 7)); 
-console.log(generateArray(-4, 7));
+// Example usage with prompt
+const start = parseInt(prompt("Enter the starting number:"));
+const end = parseInt(prompt("Enter the ending number:"));
+console.log(generateArray(start, end));

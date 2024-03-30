@@ -19,5 +19,6 @@ function getPrimeNumbers(array) {
     return array.filter(num => isPrime(num));
 }
 
-// Example usage
-console.log(getPrimeNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+// Example usage with prompt
+const inputArray = prompt("Enter numbers separated by commas: e.g. 1,2,3,4,5,6,7...").split(',').map(Number);
+console.log(getPrimeNumbers(inputArray));
