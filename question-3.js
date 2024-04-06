@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 // Define a function called isPrime that takes one parameter
 function isPrime(num) {
     // Check if the number is less than or equal to 1, as numbers less than or equal to 1 are not prime
@@ -22,4 +24,4 @@ function getPrimeNumbers(array) {
 // Example usage with prompt
 const inputArray = prompt("Enter numbers separated by commas: e.g. 1,2,3,4,5,6,7...").split(',').map(Number);
 const primes = getPrimeNumbers(inputArray);
-alert("Prime numbers in the input array are: " + primes.join(', '));
+console.log("Prime numbers in the input array are: " + primes.join(', '));

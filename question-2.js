@@ -1,3 +1,20 @@
+const prompt = require('prompt-sync')();
+
+// Function to prompt for input and ensure it's an integer
+function promptInteger(message) {
+    let input;
+    do {
+        input = prompt(message);
+        // Try to parse the input as an integer, if successful, break the loop
+        if (!isNaN(parseInt(input))) {
+            break;
+        } else {
+            console.log("Invalid input! Please enter an integer.");
+        }
+    } while (true);
+    return parseInt(input);
+}
+
 // Define a function called generateArray that takes two parameters
 function generateArray(start, end) {
     // Initialize an empty array to store the generated sequence of numbers
@@ -22,8 +39,8 @@ function generateArray(start, end) {
     return array;
 }
 
-// Example usage with prompt
-const start = parseInt(prompt("Enter the starting number:"));
-const end = parseInt(prompt("Enter the ending number:"));
-const generateArrayrray = (generateArray(start, end));
-alert(`Generated array: ${generateArrayrray.join(', ')}`);
+// Example usage with promptInteger
+const start = promptInteger("Enter the starting number: ");
+const end = promptInteger("Enter the ending number: ");
+const generatedArray = generateArray(start, end);
+console.log("Generated array:", generatedArray.join(', '));

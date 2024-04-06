@@ -1,3 +1,5 @@
+const prompt = require('prompt-sync')();
+
 // Define a function called swapCase that takes one parameter
 function swapCase(inputString) {
     return inputString.split('').map(char => {
@@ -11,6 +13,6 @@ function swapCase(inputString) {
 }
 
 // Example usage with prompt
-const inputString = prompt("Enter a string:");
+const inputString = prompt("Enter a word/sentence to be cased swapped:");
 const swapedCase = (swapCase(inputString));
-alert(`The Swaped case string is: ${swapedCase}`);
+console.log(`The Swaped case output is: ${swapedCase}`);
